@@ -29,25 +29,25 @@ const Footer = () => {
                 <img src={Logo} className="navlogo" alt="" />
                 <div style={{ display: "flex", justifyContent: "center" }}>
                   <IconButton
-                    href="https://www.instagram.com/irespondafrica/"
+                    href="#"
                     target="_blank"
                   >
                     <InstagramIcon style={{ color: "#fff" }} />
                   </IconButton>
                   <IconButton
-                    href="https://www.facebook.com/irespondafrica"
+                    href="#"
                     target="_blank"
                   >
                     <FacebookIcon style={{ color: "#fff" }} />
                   </IconButton>
                   <IconButton
-                    href="https://www.linkedin.com/company/irespond-africa/about"
+                    href="#"
                     target="_blank"
                   >
                     <LinkedInIcon style={{ color: "#fff" }} />
                   </IconButton>
                   <IconButton
-                    href="https://twitter.com/iRespondAfrica"
+                    href="#"
                     target="_blank"
                   >
                     <TwitterIcon style={{ color: "#fff" }} />
@@ -58,13 +58,13 @@ const Footer = () => {
                 <ul className="first">
                   <li>
                     <Link className="footerlink" to="/life-hack">
-                      Blog
+                      About
                     </Link>
                   </li>
                   <li>
                     {" "}
                     <Link className="footerlink" to="/life-hack">
-                      Careers
+                      Services
                     </Link>
                   </li>
                   <li>
@@ -74,26 +74,32 @@ const Footer = () => {
                       to="/privacy-policy"
                       target="_blank"
                     >
-                      Privacy Policy
+                      Sponsors
                     </Link>
                   </li>
-                  <li>iRespond TV</li>
+                  <li> <Link
+                      className="footerlink"
+                      to="/privacy-policy"
+                      target="_blank"
+                    >
+                      Market Place
+                    </Link></li>
                 </ul>
 
                 <ul className="third">
                   <li>
                     <Link to="/contact-a-therapist" className="footerlink">
-                      Talk to a therapist
+                      FAQ
                     </Link>
                   </li>
                   <li>
                     <Link to="/emergency-contact" className="footerlink">
-                      Request emergency
+                      Privacy Policy
                     </Link>
                   </li>
                   <li>
                     <Link to="/lanes" className="footerlink">
-                      Find a support group
+                      T&Cs
                     </Link>
                   </li>
                 </ul>
