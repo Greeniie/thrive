@@ -175,7 +175,6 @@ const BusinessSolutions = () => {
               src={BML}
               alt=""
             />
-
             <h3
               className="content-title"
               style={{
