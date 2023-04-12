@@ -54,7 +54,6 @@ const Navbar = () => {
     color: "#2b7833",
   };
 
-  const access = localStorage.getItem("accessToken");
 
   return (
     <div className="landingnav">
