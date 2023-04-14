@@ -2,6 +2,11 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import IconButton from "@mui/material/IconButton";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const style = {
   position: "absolute",
@@ -34,8 +39,24 @@ const Business = ({ business }) => {
             className="h-[80px] w-[80px] mx-auto rounded-full object-cover"
           />
         </div>
-        <div></div>
         <div className="pt-2">{business?.business_name}</div>
+        <div className="pt-2 text-sm" style={{ fontFamily: "DM Sans" }}>
+          {business.business_address}
+        </div>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <IconButton href="#" target="_blank">
+            <InstagramIcon style={{ color: "#ff0000" }} />
+          </IconButton>
+          <IconButton href="#" target="_blank">
+            <FacebookIcon style={{ color: "#ff0000" }} />
+          </IconButton>
+          <IconButton href="#" target="_blank">
+            <LinkedInIcon style={{ color: "#ff0000" }} />
+          </IconButton>
+          <IconButton href="#" target="_blank">
+            <TwitterIcon style={{ color: "#ff0000" }} />
+          </IconButton>
+        </div>
       </div>
 
       <div className="text-center">
@@ -55,7 +76,7 @@ const Business = ({ business }) => {
       >
         <Box sx={style} className="w-[85%] md:w-[50%]">
           <Typography id="modal-modal-title" variant="h6" component="h2">
-            <div className="flex gap-3 items-center justify-center md:justify-start p-3 md:p-10">
+            <div className="flex gap-3 justify-center md:justify-start p-3 md:p-10">
               <div>
                 <img
                   src={
@@ -67,16 +88,31 @@ const Business = ({ business }) => {
                   className="h-[50px] w-[50px] md:h-[80px] md:w-[80px] mx-auto rounded-full object-cover"
                 />
               </div>
-              <div style={{ fontFamily: "DM Sans", textAlign: "center" }}>
-                {business.business_name}
-              </div>
-              <div style={{ fontFamily: "DM Sans", textAlign: "center" }}>
-                {business.business_address}
+              <div>
+                <div style={{ fontFamily: "DM Sans", textAlign: "center" }}>
+                  {business.business_name}
+                </div>
+                <div className="pt-2 text-sm" style={{ fontFamily: "DM Sans" }}>
+                  {business.business_address}
+                </div>
+                <div style={{ display: "flex" }}>
+                  <IconButton href="#" target="_blank">
+                    <InstagramIcon style={{ color: "#ff0000" }} />
+                  </IconButton>
+                  <IconButton href="#" target="_blank">
+                    <FacebookIcon style={{ color: "#ff0000" }} />
+                  </IconButton>
+                  <IconButton href="#" target="_blank">
+                    <LinkedInIcon style={{ color: "#ff0000" }} />
+                  </IconButton>
+                  <IconButton href="#" target="_blank">
+                    <TwitterIcon style={{ color: "#ff0000" }} />
+                  </IconButton>
+                </div>
               </div>
             </div>
           </Typography>
-          
-          
+
           <Typography
             id="modal-modal-description"
             sx={{ mt: 2, fontFamily: "DM Sans" }}
