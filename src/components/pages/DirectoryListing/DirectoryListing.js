@@ -10,13 +10,17 @@ import Businesses from "./Businesses";
 const DirectoryListing = () => {
   const [businesses, setBusinesses] = useState([]);
 
-  const fetchLanes = async () => {
-    const res = await axios.get("http://208.73.206.2:8080/api/businesses");
-    setBusinesses(res?.data);
+  const fetchBusinesses = async () => {
+    try {
+      const res = await axios.get("http://208.73.206.2:8080/api/businesses");
+      setBusinesses(res?.data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   useEffect(() => {
-    fetchLanes();
+    fetchBusinesses();
   }, [businesses?.length]);
 
   const [query, setQuery] = useState("");
