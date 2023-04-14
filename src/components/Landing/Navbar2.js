@@ -64,8 +64,7 @@ const NavBar2 = () => {
             color: "#6B7280",
             fontSize: "14px",
             lineHeight: "20px",
-            padding: '10px'
-
+            padding: "10px",
           }}
           elevation={0}
           className="nav"
@@ -153,7 +152,13 @@ const NavBar2 = () => {
                       my: 2,
                     }}
                   >
-                    <NavLink to="/sponsors" className="landingnavlink1">
+                    <NavLink
+                      to="/sponsors"
+                      className="landingnavlink1"
+                      style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                    >
                       Our Sponsors
                     </NavLink>
                   </Typography>
@@ -162,9 +167,26 @@ const NavBar2 = () => {
                       my: 2,
                     }}
                   >
-                    <Link to="marketplace" className="landingnavlink1">
+                    <NavLink
+                      to="/directory-listing"
+                      className="landingnavlink1"
+                      style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                    >
+                      Directory Listing
+                    </NavLink>
+                  </Typography>
+                  <Typography
+                    sx={{
+                      my: 2,
+                    }}
+                  >
+                    <NavLink to="/marketplace" className="landingnavlink1"  style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }>
                       Marketplace
-                    </Link>
+                    </NavLink>
                   </Typography>
                   <Typography
                     sx={{
@@ -237,14 +259,27 @@ const NavBar2 = () => {
                 </NavLink>
               </Typography>
               <Typography>
-                <Link to="/sponsors" className="landingnavlink1">
+                <NavLink
+                  to="/sponsors"
+                  className="landingnavlink1"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Our Sponsors
-                </Link>
+                </NavLink>
               </Typography>
               <Typography>
-                <Link to="marketplace" className="landingnavlink1">
+                <NavLink to="/directory-listing" className="landingnavlink1"  style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }>
+                  Directory Listing
+                </NavLink>
+              </Typography>
+              <Typography>
+                <NavLink to="/marketplace" className="landingnavlink1"  style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }>
                   Marketplace
-                </Link>
+                </NavLink>
               </Typography>
               <Typography>
                 <NavLink

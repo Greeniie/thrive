@@ -5,7 +5,6 @@ import solution from "../../assets/solution.png";
 import decentralized from "../../assets/decentralized.png";
 import help from "../../assets/help.png";
 import reduce from "../../assets/reduce-cost.png";
-import { fontFamily } from "@mui/system";
 
 const AboutBanner = () => {
   return (

@@ -2,8 +2,8 @@ import React from "react";
 
 const CTA2 = () => {
   return (
-    <div className="min-h-[85vh] hero-bg2 mt-10">
-      <div className="w-4/5 mx-auto pt-10 md:pt-28">
+    <div className="min-h-[85vh] hero-bg2">
+      <div className="w-4/5 mx-auto pt-10">
         <div className="t-textbig">One-time sign-up.</div>
         <div className="t-textbig2"> Easy sign-ins.</div>
 

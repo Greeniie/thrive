@@ -79,7 +79,7 @@
   margin: auto;
 }
 
-.t-textbig, .t-textbig2 {
+.t-textbig2 {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 600;
@@ -260,10 +260,21 @@
   border-top: 3px solid #fff;
 }
 
-.banner, .banner2 {
+.banner,
+.banner2 {
   display: grid;
   grid-template-columns: 50% 50%;
 
+}
+
+.formwrap {
+  display: grid;
+  align-items: center;
+  width: 90%;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  margin: 50px 0 50px auto;
+  font-family: DM Sans;
 }
 
 
@@ -311,10 +322,46 @@
   padding-bottom: 30px;
 }
 
+.therapist {
+  background-image: url("./components/assets/black_business_owner3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 50vw rgba(22, 21, 22, 0.8);
+
+}
+
+.t-textbig {
+  padding-top: 100px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  color: white;
+  padding-bottom: 10px;
+  width: 75%;
+  margin-right: auto;
+}
+
+.d-wrap {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.laneheaderstyle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 36px;
+}
+
+
 
 @media (max-width: 300px) {
 
-  .bannertextsmall, .readmoresmall {
+  .bannertextsmall,
+  .readmoresmall {
     font-size: 12px;
   }
 
@@ -325,9 +372,35 @@
   .bannertext {
     font-size: 45px;
   }
+
+  .t-textbig {
+    font-size: 45px;
+
+  }
 }
 
 @media (max-width: 900px) {
+
+  .d-wrap {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .formwrap {
+    display: inline;
+  }
+
+  .formwrap img {
+    display: none;
+  }
+
+  .laneheaderstyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+  }
+
   .landingnav {
     /* padding: 10px 0; */
     background: #feffff;
@@ -420,7 +493,8 @@
     padding-top: 50px;
   }
 
-  .bannertextsmall, .readmoresmall {
+  .bannertextsmall,
+  .readmoresmall {
     font-size: 20px;
     width: 80%;
     margin: auto;
@@ -436,14 +510,18 @@
   }
 
 
-  .banner, .banner2 {
+  .banner,
+  .banner2 {
     justify-content: center;
   }
 
-  .banner, .banner2 {
+  .banner,
+  .banner2 {
     display: flex;
     flex-direction: column-reverse;
   }
+
+
 }
 
 @media (max-width: 1200px) {
