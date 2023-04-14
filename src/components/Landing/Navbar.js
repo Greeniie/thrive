@@ -160,6 +160,21 @@ const Navbar = () => {
                     }}
                   >
                     <NavLink
+                      to="/directory-listing"
+                      className="landingnavlink"
+                      style={({ isActive }) =>
+                        isActive ? activeStyle : undefined
+                      }
+                    >
+                      Directory Listing
+                    </NavLink>
+                  </Typography>
+                  <Typography
+                    sx={{
+                      my: 2,
+                    }}
+                  >
+                    <NavLink
                       to="/marketplace"
                       className="landingnavlink"
                       style={({ isActive }) =>
@@ -246,6 +261,15 @@ const Navbar = () => {
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
                   Our Sponsors
+                </NavLink>
+              </Typography>
+              <Typography>
+                <NavLink
+                  to="/directory-listing"
+                  className="landingnavlink"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
+                  Directory Listing
                 </NavLink>
               </Typography>
               <Typography>
