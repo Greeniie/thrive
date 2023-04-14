@@ -5,10 +5,11 @@ import solution from "../../assets/solution.png";
 import decentralized from "../../assets/decentralized.png";
 import help from "../../assets/help.png";
 import reduce from "../../assets/reduce-cost.png";
+import { fontFamily } from "@mui/system";
 
 const AboutBanner = () => {
   return (
-    <>
+    <div style={{ fontFamily: "DM Sans" }}>
       <div style={{ bgColor: "#f9f9f9" }}>
         <div className="banner2">
           <div>
@@ -83,12 +84,12 @@ const AboutBanner = () => {
           <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#ff0000] hover:border-b-[4px] hover:shadow-lg">
             <div style={{ fontFamily: "DM Sans" }}>
               <div
-                 className="text-gray-100 absolute top-20"
-                 style={{
-                   fontFamily: "DM Sans",
-                   zIndex: "-1",
-                   fontSize: "80px",
-                 }}
+                className="text-gray-100 absolute top-20"
+                style={{
+                  fontFamily: "DM Sans",
+                  zIndex: "-1",
+                  fontSize: "80px",
+                }}
               >
                 02
               </div>
@@ -126,12 +127,12 @@ const AboutBanner = () => {
           <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#ff0000] hover:border-b-[4px] hover:shadow-lg">
             <div style={{ fontFamily: "DM Sans" }}>
               <div
-                 className="text-gray-100 absolute top-20"
-                 style={{
-                   fontFamily: "DM Sans",
-                   zIndex: "-1",
-                   fontSize: "80px",
-                 }}
+                className="text-gray-100 absolute top-20"
+                style={{
+                  fontFamily: "DM Sans",
+                  zIndex: "-1",
+                  fontSize: "80px",
+                }}
               >
                 04
               </div>
@@ -147,7 +148,7 @@ const AboutBanner = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

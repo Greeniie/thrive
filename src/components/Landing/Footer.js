@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <div>
-      <div style={{ background: "black" }}>
+      <div style={{ background: "black", fontFamily: 'DM Sans' }}>
         <CssBaseline />
         <Container maxWidth="lg">
           <Box sx={{ minHeight: "374px" }}>
