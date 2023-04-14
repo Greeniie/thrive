@@ -153,8 +153,8 @@ const NavBar2 = () => {
                       my: 2,
                     }}
                   >
-                    <NavLink to="/assessment" className="landingnavlink1">
-                      Assessments
+                    <NavLink to="/sponsors" className="landingnavlink1">
+                      Our Sponsors
                     </NavLink>
                   </Typography>
                   <Typography
@@ -162,8 +162,8 @@ const NavBar2 = () => {
                       my: 2,
                     }}
                   >
-                    <Link to="/korporate" className="landingnavlink1">
-                      Korporate
+                    <Link to="marketplace" className="landingnavlink1">
+                      Marketplace
                     </Link>
                   </Typography>
                   <Typography
@@ -172,13 +172,13 @@ const NavBar2 = () => {
                     }}
                   >
                     <NavLink
-                      to="/findhelp"
+                      to="/contact"
                       className="landingnavlink1"
                       style={({ isActive }) =>
                         isActive ? activeStyle : undefined
                       }
                     >
-                      Find help{" "}
+                      Contact{" "}
                     </NavLink>
                   </Typography>
 
@@ -237,22 +237,22 @@ const NavBar2 = () => {
                 </NavLink>
               </Typography>
               <Typography>
-                <Link to="/assessment" className="landingnavlink1">
-                  Assessments
+                <Link to="/sponsors" className="landingnavlink1">
+                  Our Sponsors
                 </Link>
               </Typography>
               <Typography>
-                <Link to="/korporate" className="landingnavlink1">
-                  Korporate
+                <Link to="marketplace" className="landingnavlink1">
+                  Marketplace
                 </Link>
               </Typography>
               <Typography>
                 <NavLink
-                  to="/findhelp"
+                  to="/contact"
                   className="landingnavlink1"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                  Find help
+                  Contact
                 </NavLink>
               </Typography>
             </Box>
