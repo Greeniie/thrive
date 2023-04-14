@@ -19,7 +19,7 @@ const CTA2 = () => {
           <button className="bg-[#ff0000] text-white rounded-sm py-3 px-5">
             Become a Sponsor
           </button>
-          <button className="bg-white text-black rounded-sm py-3 px-5">
+          <button className="bg-white text-black rounded-sm py-3 px-5 mb-3 md:mb-0">
             I am a Business Owner
           </button>
         </div>
