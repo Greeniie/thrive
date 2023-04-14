@@ -67,24 +67,28 @@ const Business = ({ business }) => {
                   className="h-[50px] w-[50px] md:h-[80px] md:w-[80px] mx-auto rounded-full object-cover"
                 />
               </div>
-              <div style={{ fontFamily: "DM Sans", textAlign: 'center' }}>
+              <div style={{ fontFamily: "DM Sans", textAlign: "center" }}>
                 {business.business_name}
+              </div>
+              <div style={{ fontFamily: "DM Sans", textAlign: "center" }}>
+                {business.business_address}
               </div>
             </div>
           </Typography>
+          
+          
           <Typography
             id="modal-modal-description"
-            sx={{ mt: 2, fontFamily: "DM Sans" }} className="h-[300px] p-3 md:p-5 pt-0 mt-0 overflow-scroll"
+            sx={{ mt: 2, fontFamily: "DM Sans" }}
+            className="h-[300px] p-3 md:p-5 pt-0 mt-0 overflow-scroll"
           >
             {business.business_description}
           </Typography>
           <div className="text-center">
-        <button
-          className="bg-[#ff0000] text-white rounded-sm py-2 px-3 m-3"
-        >
-          Learn More
-        </button>
-      </div>
+            <button className="bg-[#ff0000] text-white rounded-sm py-2 px-3 m-3">
+              Learn More
+            </button>
+          </div>
         </Box>
       </Modal>
     </div>
