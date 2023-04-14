@@ -79,7 +79,7 @@
   margin: auto;
 }
 
-.t-textbig {
+.t-textbig, .t-textbig2 {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 600;
@@ -350,6 +350,20 @@
   .t-textbig1,
   .t-textbig {
     padding-top: 50px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+    color: white;
+    padding-bottom: 10px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .t-textbig2 {
+    padding-top: 0;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
