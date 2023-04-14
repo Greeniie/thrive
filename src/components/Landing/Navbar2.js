@@ -12,7 +12,7 @@ import logo from "../../components/assets/LOGOMARK.png";
 import HamburgerOpenIcon from "../MenuIcons/HamburgerOpenIcon";
 import HamburgerCloseIcon from "../MenuIcons/HamburgerCloseIcon";
 
-const Navbar = () => {
+const NavBar2 = () => {
   const lgstyle = {
     height: "63px",
   };
@@ -22,7 +22,7 @@ const Navbar = () => {
     marginLeft: "12px",
   };
 
-  const signin = {
+  const signin1 = {
     textTransform: "capitalize",
     fontFamily: "DM Sans",
     fontWeight: "bold",
@@ -36,7 +36,7 @@ const Navbar = () => {
     fontWeight: "bold",
     border: "none",
     marginTop: "8px",
-    width: '100%'
+    width: "100%",
   };
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -54,17 +54,18 @@ const Navbar = () => {
     color: "#ff0000",
   };
 
-
   return (
     <div className="landingnav">
       <div className="mynav">
         <AppBar
+          position="static"
           sx={{
-            position: 'absolute',
-            background: 'transparent',
+            bgcolor: "#FEFFFF",
+            color: "#6B7280",
             fontSize: "14px",
             lineHeight: "20px",
             padding: '10px'
+
           }}
           elevation={0}
           className="nav"
@@ -75,13 +76,16 @@ const Navbar = () => {
               noWrap
               component="div"
               sx={{
+                mr: 2,
                 display: { xs: "none", md: "flex" },
               }}
             >
               <Link
-                to="/home"
+                to="/"
                 className="logo"
-            
+                style={{
+                  margin: "0 9px",
+                }}
               >
                 <img src={logo} alt="" style={lgstylemobile} />
               </Link>
@@ -134,9 +138,13 @@ const Navbar = () => {
                       my: 2,
                     }}
                   >
-                    <NavLink to="/about" className="landingnavlink"  style={({ isActive }) =>
+                    <NavLink
+                      to="/about"
+                      className="landingnavlink1"
+                      style={({ isActive }) =>
                         isActive ? activeStyle : undefined
-                      }>
+                      }
+                    >
                       About Us
                     </NavLink>
                   </Typography>
@@ -145,8 +153,8 @@ const Navbar = () => {
                       my: 2,
                     }}
                   >
-                    <NavLink to="/sponsors" className="landingnavlink">
-                      Our Sponsors
+                    <NavLink to="/assessment" className="landingnavlink1">
+                      Assessments
                     </NavLink>
                   </Typography>
                   <Typography
@@ -154,8 +162,8 @@ const Navbar = () => {
                       my: 2,
                     }}
                   >
-                    <Link to="/marketplace" className="landingnavlink"  >
-                      Marketplace
+                    <Link to="/korporate" className="landingnavlink1">
+                      Korporate
                     </Link>
                   </Typography>
                   <Typography
@@ -165,25 +173,24 @@ const Navbar = () => {
                   >
                     <NavLink
                       to="/findhelp"
-                      className="landingnavlink"
+                      className="landingnavlink1"
                       style={({ isActive }) =>
                         isActive ? activeStyle : undefined
                       }
                     >
-                      Contact{" "}
+                      Find help{" "}
                     </NavLink>
                   </Typography>
 
-
-                    <Typography
-                      sx={{
-                        mt: 2,
-                      }}
-                    >
-                      <Link to="/login" className="signin">
-                        Sign In
-                      </Link>
-                    </Typography>
+                  <Typography
+                    sx={{
+                      mt: 2,
+                    }}
+                  >
+                    <Link to="/login" className="landingnavlink1">
+                      Sign In
+                    </Link>
+                  </Typography>
 
                   <Typography>
                     <Button
@@ -210,7 +217,7 @@ const Navbar = () => {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
             >
-              <Link to="/home" className="logo">
+              <Link to="/" className="logo">
                 <img src={logo} alt="" style={lgstyle} />
               </Link>
             </Typography>
@@ -220,51 +227,54 @@ const Navbar = () => {
                 display: { xs: "none", md: "flex", justifyContent: "flex-end" },
               }}
             >
-               <Typography>
-                <NavLink to="/about" className="landingnavlink"  style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }>
+              <Typography>
+                <NavLink
+                  to="/about"
+                  className="landingnavlink1"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   About Us
                 </NavLink>
               </Typography>
               <Typography>
-                <Link to="/sponsors" className="landingnavlink">
-                  Our Sponsors
+                <Link to="/assessment" className="landingnavlink1">
+                  Assessments
                 </Link>
               </Typography>
               <Typography>
-                <Link to="/marketplace" className="landingnavlink">
-                  Marketplace
+                <Link to="/korporate" className="landingnavlink1">
+                  Korporate
                 </Link>
               </Typography>
               <Typography>
                 <NavLink
                   to="/findhelp"
-                  className="landingnavlink"
+                  className="landingnavlink1"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                  Contact
+                  Find help
                 </NavLink>
               </Typography>
-
-              
             </Box>
-            <Box  sx={{
+
+            <Box
+              sx={{
                 flexGrow: 1,
                 display: { xs: "none", md: "flex", justifyContent: "flex-end" },
-              }}>
-               <div>
-                  <Typography>
-                    <Link to="/login" className="signin">
-                      Sign In
-                    </Link>
-                  </Typography>
-                </div>
+              }}
+            >
+              <div>
+                <Typography>
+                  <Link to="/login" className="signin1">
+                    Sign In
+                  </Link>
+                </Typography>
+              </div>
 
               <Typography>
                 <Button
-                      href="/contact-a-therapist"
-                      sx={{
+                  href="/contact-a-therapist"
+                  sx={{
                     color: "white",
                     backgroundColor: "#ff0000",
                     "&:hover": {
@@ -272,12 +282,12 @@ const Navbar = () => {
                       color: "#ff0000",
                     },
                   }}
-                  style={signin}
+                  style={signin1}
                 >
                   Sign up
                 </Button>
               </Typography>
-               </Box>
+            </Box>
           </Toolbar>
         </AppBar>
       </div>
@@ -285,4 +295,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar2;
