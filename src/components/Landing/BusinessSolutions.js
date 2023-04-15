@@ -324,7 +324,7 @@ const BusinessSolutions = () => {
               Mental Health
             </h3>
             <div className="content-details fadeIn-bottom">
-              <p className="content-text">Mental Health</p>
+              <p className="content-text">Get access to emotional, psychological, and social well-being experts at a go.</p>
             </div>
           </div>{" "}
           <div className="content" style={{ position: "relative" }}>
@@ -347,7 +347,7 @@ const BusinessSolutions = () => {
               ICSS Partner's Portal{" "}
             </h3>
             <div className="content-details fadeIn-bottom">
-              <p className="content-text">ICSS partner's portal</p>
+              <p className="content-text">Get access to industry-led expert and consultant that provides you with contents on business structuring, financial decision, professional guidance and many more.</p>
             </div>
           </div>{" "}
           <div className="content" style={{ position: "relative" }}>
@@ -370,7 +370,7 @@ const BusinessSolutions = () => {
               e-Learning{" "}
             </h3>
             <div className="content-details fadeIn-bottom">
-              <p className="content-text">e-Learning</p>
+              <p className="content-text">Have access to video tutorials, and training for free</p>
             </div>
           </div>
         </div>
