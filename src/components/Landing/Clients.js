@@ -10,7 +10,7 @@ const Clients = () => {
       {" "}
       <section className="text-center flex flex-col items-center mt-[100px] mb-20 w-[90%] mx-auto">
         <h2 className="text-[50px] mb-5 text-[#ff0000] hero">
-          Meet Our Clients
+          Meet Our Consortium Members
         </h2>
         <div className="block md:grid md:overflow-hidden md:grid-cols-4 md:grid-rows-1 gap-2">
           <a href="http://www.enterprisehubs.com/" target="_blank" rel="noopener noreferrer">

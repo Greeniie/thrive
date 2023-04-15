@@ -8,7 +8,7 @@ const Sponsors = () => {
   return (
     <div>
       {" "}
-      <section className="text-center flex flex-col items-center mb-20 w-[90%] mx-auto">
+      <section className="text-center flex flex-col items-center mb-20 mt-[100px] w-[90%] mx-auto">
         <h2 className="text-[50px] mb-5 text-[#ff0000] hero">Our Sponsors</h2>
 
         <div className="block md:grid md:overflow-hidden md:grid-cols-3 md:grid-rows-1 gap-2">

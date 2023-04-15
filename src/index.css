@@ -209,7 +209,7 @@
 }
 
 .hero-bg2 {
-  background-image: url("./components/assets/black_business_owners2.jpg");
+  background-image: url("./components/assets/3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -323,7 +323,7 @@
 }
 
 .therapist {
-  background-image: url("./components/assets/black_business_owner3.jpg");
+  background-image: url("./components/assets/25.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -515,11 +515,21 @@
     justify-content: center;
   }
 
-  .banner,
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
+
   .banner2 {
     display: flex;
     flex-direction: column-reverse;
   }
+
+
+.carousel-caption {
+  position: absolute;
+  top: 15%;
+}
 
 
 }

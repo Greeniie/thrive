@@ -54,13 +54,13 @@ const Footer = () => {
               <div className="footerlinks">
                 <ul className="first">
                   <li>
-                    <Link className="footerlink" to="/life-hack">
+                    <Link className="footerlink" to="/about">
                       About
                     </Link>
                   </li>
                   <li>
                     {" "}
-                    <Link className="footerlink" to="/life-hack">
+                    <Link className="footerlink" to="/">
                       Services
                     </Link>
                   </li>
@@ -68,7 +68,7 @@ const Footer = () => {
                     {" "}
                     <Link
                       className="footerlink"
-                      to="/privacy-policy"
+                      to="/sponsors"
                       target="_blank"
                     >
                       Sponsors
@@ -76,7 +76,7 @@ const Footer = () => {
                   </li>
                   <li> <Link
                       className="footerlink"
-                      to="/privacy-policy"
+                      to="/marketplace"
                       target="_blank"
                     >
                       Market Place
@@ -85,18 +85,23 @@ const Footer = () => {
 
                 <ul className="third">
                   <li>
-                    <Link to="/contact-a-therapist" className="footerlink">
+                    <Link to="/" className="footerlink">
                       FAQ
                     </Link>
                   </li>
                   <li>
-                    <Link to="/emergency-contact" className="footerlink">
+                    <Link to="/" className="footerlink">
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
-                    <Link to="/lanes" className="footerlink">
+                    <Link to="/" className="footerlink">
                       T&Cs
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/directory-listing" className="footerlink">
+                      Directory Listing
                     </Link>
                   </li>
                 </ul>

@@ -14,11 +14,11 @@ import HamburgerCloseIcon from "../MenuIcons/HamburgerCloseIcon";
 
 const Navbar = () => {
   const lgstyle = {
-    height: "63px",
+    height: "43px",
   };
 
   const lgstylemobile = {
-    height: "43px",
+    height: "63px",
     marginLeft: "12px",
   };
 

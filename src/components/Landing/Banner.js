@@ -1,8 +1,8 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import image1 from "../assets/tanzanian-woman-with-snake-print-turban-over-hear-2022-02-10-17-55-13-utc.jpg";
-import image2 from "../assets/african-female-sitting-outside-with-her-laptop-and-2023-02-07-19-20-44-utc.jpeg";
-import image3 from "../assets/confident-black-business-man-2021-08-26-17-26-55-utc.jpg";
+import image1 from "../assets/8.jpg";
+import image2 from "../assets/EXHIBITION.jpg";
+import image3 from "../assets/4.jpg";
 import Navbar from "./Navbar";
 import Button from "@mui/material/Button";
 
@@ -16,7 +16,7 @@ const Banner = () => {
             className="d-block w-100"
             src={image1}
             alt="First slide"
-            style={{ filter: "brightness(50%)" }}
+            style={{ filter: "brightness(30%)" }}
           />
           <Carousel.Caption>
             <div className="t-textbig1">
@@ -46,7 +46,7 @@ const Banner = () => {
             className="d-block w-100"
             src={image2}
             alt="Second slide"
-            style={{ filter: "brightness(50%)" }}
+            style={{ filter: "brightness(30%)" }}
           />
 
           <Carousel.Caption>
@@ -78,7 +78,7 @@ const Banner = () => {
             className="d-block w-100"
             src={image3}
             alt="Third slide"
-            style={{ filter: "brightness(50%)" }}
+            style={{ filter: "brightness(30%)" }}
           />
 
 <Carousel.Caption>

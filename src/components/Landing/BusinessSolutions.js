@@ -1,14 +1,14 @@
 import React from "react";
-import DA from "../assets/da.jpeg";
-import VO from "../assets/vo.jpeg";
-import BT from "../assets/bt.jpeg";
-import ATE from "../assets/ate.jpeg";
-import WB from "../assets/wb.jpeg";
-import BML from "../assets/bml.jpeg";
-import DL from "../assets/dl.jpeg";
-import NAM from "../assets/nam.jpeg";
-import CT from "../assets/ct.jpeg";
-import ATF from "../assets/atf.jpeg";
+import DA from "../assets/29.jpg";
+import VO from "../assets/30.jpg";
+import BT from "../assets/6.jpg";
+import ATE from "../assets/17.jpg";
+import WB from "../assets/14.jpg";
+import BML from "../assets/23.jpg";
+import DL from "../assets/9.jpg";
+import NAM from "../assets/18.jpg";
+import CT from "../assets/21.jpg";
+import ATF from "../assets/22.jpg";
 
 const BusinessSolutions = () => {
   return (
@@ -28,7 +28,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={DA}
               alt=""
             />
@@ -57,7 +57,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={VO}
               alt=""
             />
@@ -88,7 +88,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={WB}
               alt=""
             />
@@ -115,7 +115,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={BT}
               alt=""
             />
@@ -142,7 +142,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={ATE}
               alt=""
             />
@@ -171,7 +171,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={BML}
               alt=""
             />
@@ -199,7 +199,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={DL}
               alt=""
             />
@@ -229,7 +229,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={NAM}
               alt=""
             />
@@ -258,7 +258,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={CT}
               alt=""
             />
@@ -286,7 +286,7 @@ const BusinessSolutions = () => {
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
-              className="content-image brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
               src={ATF}
               alt=""
             />

@@ -12,8 +12,8 @@ const LandingPage = () => {
       <Banner />
       <BusinessSolutions />
       <CTA />
-      <Clients />
       <Sponsors/>
+      <Clients />
       <Footer/>
     </div>
   );

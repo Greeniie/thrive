@@ -4,6 +4,10 @@ import NavBar2 from "../../Landing/Navbar2";
 import SponsorsList from "../../Landing/Sponsors";
 import BecomeAPartner from "./BecomeAPartner";
 const Sponsors = () => {
+
+  const scroll = () => {
+    window.screen.height > '500px' ? window.scrollBy(0, 700) :  window.scrollBy(0, 2100);
+  };
   return (
     <div>
       <NavBar2 />
@@ -17,7 +21,8 @@ const Sponsors = () => {
             officiis perspiciatis?
           </div>
           <div className="flex flex-col md:flex-row gap-2 pb-2 md:pb-0">
-            <button className="bg-[#ff0000] hover:bg-black text-white rounded-sm py-3 px-5">
+            <button className="bg-[#ff0000] hover:bg-black text-white rounded-sm py-3 px-5" onClick={scroll}
+>
               Become a Sponsor
             </button>
           </div>

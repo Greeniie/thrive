@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/on-a-business-mission-2021-08-28-19-35-20-utc.jpg";
+import image from "../../assets/26.jpg";
 
 const BecomeAPartner = () => {
   return (
