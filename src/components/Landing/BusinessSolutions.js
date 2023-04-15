@@ -9,6 +9,9 @@ import DL from "../assets/9.jpg";
 import NAM from "../assets/18.jpg";
 import CT from "../assets/21.jpg";
 import ATF from "../assets/22.jpg";
+import icss from "../assets/10.jpg";
+import el from "../assets/28.jpg";
+import mh from "../assets/33.jpg";
 
 const BusinessSolutions = () => {
   return (
@@ -24,7 +27,6 @@ const BusinessSolutions = () => {
               Solutions
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -53,7 +55,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -84,7 +85,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -111,7 +111,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -138,7 +137,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -167,7 +165,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -195,7 +192,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -225,7 +221,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -254,7 +249,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -282,7 +276,6 @@ const BusinessSolutions = () => {
               </p>
             </div>
           </div>
-
           <div className="content" style={{ position: "relative" }}>
             <div className="content-overlay"></div>
             <img
@@ -309,6 +302,75 @@ const BusinessSolutions = () => {
                 to access useful financial products offered by different
                 financial houses.
               </p>
+            </div>
+          </div>
+          <div className="content" style={{ position: "relative" }}>
+            <div className="content-overlay"></div>
+            <img
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              src={mh}
+              alt=""
+            />
+
+            <h3
+              className="content-title"
+              style={{
+                position: "absolute",
+                top: "40%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              Mental Health
+            </h3>
+            <div className="content-details fadeIn-bottom">
+              <p className="content-text">Mental Health</p>
+            </div>
+          </div>{" "}
+          <div className="content" style={{ position: "relative" }}>
+            <div className="content-overlay"></div>
+            <img
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              src={icss}
+              alt=""
+            />
+
+            <h3
+              className="content-title"
+              style={{
+                position: "absolute",
+                top: "40%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              ICSS Partner's Portal{" "}
+            </h3>
+            <div className="content-details fadeIn-bottom">
+              <p className="content-text">ICSS partner's portal</p>
+            </div>
+          </div>{" "}
+          <div className="content" style={{ position: "relative" }}>
+            <div className="content-overlay"></div>
+            <img
+              className="content-image mb-2 md:mb-0 brightness-50 w-full object-cover h-[400px] object-center row-span-1 col-span-1 hover:-translate-y-1 ease-in duration-200"
+              src={el}
+              alt=""
+            />
+
+            <h3
+              className="content-title"
+              style={{
+                position: "absolute",
+                top: "40%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              e-Learning{" "}
+            </h3>
+            <div className="content-details fadeIn-bottom">
+              <p className="content-text">e-Learning</p>
             </div>
           </div>
         </div>
