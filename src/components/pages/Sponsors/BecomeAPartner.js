@@ -4,7 +4,7 @@ import image from "../../assets/26.jpg";
 const BecomeAPartner = () => {
   return (
     <div className="pt-10 mx-3 md:mx-0">
-      <h2 className="text-[50px] mb-5 text-[#ff0000] text-center">
+      <h2 className="text-[50px] mb-5 text-[#eca44c] text-center">
         Become a Sponsor
       </h2>
 
@@ -67,7 +67,7 @@ const BecomeAPartner = () => {
               class="w-full h-12 mb-5 px-3 border border-gray-200"
             />
           </div>
-          <button className="bg-[#ff0000] text-white rounded-sm py-3 px-5 mb-3 md:mb-0">
+          <button className="button bg-[#eca44c] rounded-sm py-3 px-5 mb-3 md:mb-0">
             Submit
           </button>
         </div>

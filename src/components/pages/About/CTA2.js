@@ -16,10 +16,10 @@ const CTA2 = () => {
           led by GIZ/GOPA.
         </div>
         <div className="flex flex-col md:flex-row gap-2 pb-3 md:pb-0">
-          <button className="bg-[#ff0000] text-white rounded-sm py-3 px-5">
+          <button className="button bg-[#eca44c] rounded-sm py-3 px-5">
             Become a Sponsor
           </button>
-          <button className="bg-white text-black rounded-sm py-3 px-5 ">
+          <button className="bg-white text-[#eca44c] rounded-sm py-3 px-5 ">
             I am a Business Owner
           </button>
         </div>

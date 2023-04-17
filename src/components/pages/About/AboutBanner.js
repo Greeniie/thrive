@@ -20,7 +20,7 @@ const AboutBanner = () => {
             <div>
               <p className="bannertext">
                 Our
-                <span style={{ color: "#ff0000" }}> Mission </span>
+                <span style={{ color: "#eca44c" }}> Mission </span>
               </p>
             </div>
 
@@ -38,7 +38,7 @@ const AboutBanner = () => {
             <div>
               <p className="bannertext">
                 Our
-                <span style={{ color: "#ff0000" }}> Vision </span>
+                <span style={{ color: "#eca44c" }}> Vision </span>
               </p>
             </div>
 
@@ -57,9 +57,9 @@ const AboutBanner = () => {
       </div>
 
       <section className="text-center flex flex-col items-center mt-[100px] mb-20 w-[90%] mx-auto">
-        <h2 className="text-[50px] mb-5 text-[#ff0000] hero">Our Objectives</h2>
+        <h2 className="text-[50px] mb-5 text-[#eca44c] hero">Our Objectives</h2>
         <div className="block md:grid md:overflow-hidden md:grid-cols-4 md:grid-rows-1 gap-2">
-          <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#ff0000] hover:border-b-[4px] hover:shadow-lg">
+          <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#eca44c] hover:border-b-[4px] hover:shadow-lg">
             <div style={{ fontFamily: "DM Sans" }}>
               <div
                 className="text-gray-100 absolute top-20"
@@ -75,12 +75,13 @@ const AboutBanner = () => {
                 className="mb-3 mt-3 w-[30%] m-auto h-auto"
                 src={solution}
                 alt="solution"
+                style={{color: '#eca44c'}}
               />
               Provide solutions for post-training entrepreneurship development
               support, beginning with the GIZ-GOPA ICSS beneficiaries.
             </div>
           </div>
-          <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#ff0000] hover:border-b-[4px] hover:shadow-lg">
+          <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#eca44c] hover:border-b-[4px] hover:shadow-lg">
             <div style={{ fontFamily: "DM Sans" }}>
               <div
                 className="text-gray-100 absolute top-20"
@@ -102,7 +103,7 @@ const AboutBanner = () => {
               development, without the need to create their programs.
             </div>
           </div>
-          <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#ff0000] hover:border-b-[4px] hover:shadow-lg">
+          <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#eca44c] hover:border-b-[4px] hover:shadow-lg">
             <div style={{ fontFamily: "DM Sans" }}>
               <div
                 className="text-gray-100 absolute top-20"
@@ -123,7 +124,7 @@ const AboutBanner = () => {
               through augmented collaboration.
             </div>
           </div>
-          <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#ff0000] hover:border-b-[4px] hover:shadow-lg">
+          <div className="relative flex h-[316px] p-3 justify-center border-t-0 hover:border-b-[#eca44c] hover:border-b-[4px] hover:shadow-lg">
             <div style={{ fontFamily: "DM Sans" }}>
               <div
                 className="text-gray-100 absolute top-20"

@@ -4,7 +4,6 @@ import image1 from "../assets/8.jpg";
 import image2 from "../assets/EXHIBITION.jpg";
 import image3 from "../assets/4.jpg";
 import Navbar from "./Navbar";
-import Button from "@mui/material/Button";
 
 const Banner = () => {
   return (
@@ -27,17 +26,9 @@ const Banner = () => {
               find a safe haven online for development?
             </div>
             <div>
-              <Button
-                style={{
-                  textTransform: "capitalize",
-                  color: "white",
-                  background: "#ff0000",
-                  fontFamily: "DM Sans",
-                  padding: "10px 20px",
-                }}
-              >
+              <button className="button bg-[#eca44c] rounded-sm py-3 px-5">
                 Learn More
-              </Button>
+              </button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -59,17 +50,9 @@ const Banner = () => {
               difficult and lonely.
             </div>
             <div>
-              <Button
-                style={{
-                  textTransform: "capitalize",
-                  color: "white",
-                  background: "#ff0000",
-                  fontFamily: "DM Sans",
-                  padding: "10px 20px",
-                }}
-              >
+              <button className="button bg-[#eca44c] rounded-sm py-3 px-5">
                 Learn More
-              </Button>
+              </button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
@@ -81,25 +64,17 @@ const Banner = () => {
             style={{ filter: "brightness(30%)" }}
           />
 
-<Carousel.Caption>
+          <Carousel.Caption>
             <div className="t-textbig1">
-            Support enterpreneurs to grow and thrive
+              Support enterpreneurs to grow and thrive
             </div>
             <div className="t-textsmall1">
-            You can support enterprenuers by subsidizing our services.
+              You can support enterprenuers by subsidizing our services.
             </div>
             <div>
-              <Button
-                style={{
-                  textTransform: "capitalize",
-                  color: "white",
-                  background: "#ff0000",
-                  fontFamily: "DM Sans",
-                  padding: "10px 20px",
-                }}
-              >
+              <button className="button bg-[#eca44c] rounded-sm py-3 px-5">
                 Learn More
-              </Button>
+              </button>
             </div>
           </Carousel.Caption>
         </Carousel.Item>

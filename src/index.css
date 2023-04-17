@@ -27,7 +27,7 @@
 
 .landingnavlink:hover,
 .signin:hover {
-  color: #ff0000 !important;
+  color: #eca44c !important;
   font-weight: bold !important;
 }
 
@@ -49,7 +49,7 @@
 
 .landingnavlink1:hover,
 .signin1:hover {
-  color: #ff0000 !important;
+  color: #eca44c !important;
   font-weight: bold !important;
 }
 
@@ -64,7 +64,7 @@
 
 .carousel-caption {
   position: absolute;
-  top: 30%;
+  top: 23%;
 }
 
 .t-textbig1 {
@@ -94,7 +94,7 @@
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 35px;
   color: white;
   width: 70%;
@@ -107,7 +107,7 @@
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 35px;
   color: white;
   width: 70%;
@@ -185,7 +185,7 @@
 }
 
 .content:hover .content-details {
-  top: 60%;
+  top: 63%;
   left: 50%;
   opacity: 1;
 }
@@ -193,7 +193,7 @@
 
 .content-details p {
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .fadeIn-bottom {
@@ -248,7 +248,7 @@
 }
 
 .footerlink:hover {
-  color: #ff0000;
+  color: #eca44c;
 }
 
 
@@ -277,7 +277,14 @@
   font-family: DM Sans;
 }
 
+.button {
+  color: black
+}
 
+.button:hover{
+  color: white;
+  background: #000;
+}
 
 .bannerabout {
   padding-top: 100px;

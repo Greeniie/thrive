@@ -12,7 +12,7 @@ const Readmore = () => {
         <div className="bannerabout">
           <div>
             <p className="bannertext">
-              Still <span style={{ color: "#ff0000" }}> Curious?</span>
+              Still <span style={{ color: "#eca44c" }}> Curious?</span>
             </p>
           </div>
 

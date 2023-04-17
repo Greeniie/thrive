@@ -49,13 +49,13 @@ const DirectoryListing = () => {
           >
             {" "}
             <div
-              className="text-2xl text-[#ff0000]"
+              className="text-2xl text-[#eca44c]"
               style={{ fontFamily: "DM Sans" }}
             >
               Businesses
             </div>{" "}
-            <LayersIcon style={{ color: "#ff0000", marginLeft: "20px" }} />
-            <div style={{ color: "#ff0000", fontFamily: "Poppins" }}>
+            <LayersIcon style={{ color: "#eca44c", marginLeft: "20px" }} />
+            <div style={{ color: "#eca44c", fontFamily: "Poppins" }}>
               {businesses?.length}
             </div>
           </div>
@@ -93,7 +93,7 @@ const DirectoryListing = () => {
               InputProps={{
                 startAdornment: (
                   <InputAdornment>
-                    <SearchIcon style={{ color: "#ff0000" }} />
+                    <SearchIcon style={{ color: "#eca44c" }} />
                   </InputAdornment>
                 ),
               }}

@@ -17,11 +17,11 @@ const BusinessSolutions = () => {
   return (
     <div>
       {" "}
-      <section className="pb-10 mt-[100px] max-w-[90%] mx-auto">
+      <section style={{fontFamily: 'DM Sans'}} className="pb-10 mt-[100px] max-w-[90%] mx-auto">
         <div className="block md:grid md:overflow-hidden md:grid-cols-3 md:grid-rows-2 gap-3">
           <div className="flex items-end w-full object-cover h-[100px] md:h-[400px] object-center row-span-1 col-span-1">
-            <div className="hero text-[28px] our-works-text text-[#ff0000] mt-auto pl-8 pb-16">
-              <span className="pb-3 pr-1 border-t-0 border-l-0 border-r-0 border-b-2 border-[#ff0000]">
+            <div className="hero text-[45px] our-works-text text-[#eca44c] mt-auto pl-8 pb-16">
+              <span className="pb-3 pr-1 border-t-0 border-l-0 border-r-0 border-b-2 border-[#eca44c]">
                 Business
               </span>
               Solutions

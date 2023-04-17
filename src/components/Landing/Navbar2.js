@@ -51,7 +51,7 @@ const NavBar2 = () => {
 
   let activeStyle = {
     fontWeight: "bold",
-    color: "#ff0000",
+    color: "#eca44c",
   };
 
   return (
@@ -216,13 +216,13 @@ const NavBar2 = () => {
 
                   <Typography>
                     <Button
-                      href="/contact-a-therapist"
+                      href="/"
                       sx={{
-                        color: "white",
-                        backgroundColor: "#ff0000",
+                        color: "black",
+                        backgroundColor: "#eca44c",
                         "&:hover": {
-                          backgroundColor: "white",
-                          color: "#ff0000",
+                          backgroundColor: "black",
+                          color: "#fff",
                         },
                       }}
                       style={signupmobile}
@@ -308,13 +308,13 @@ const NavBar2 = () => {
 
               <Typography>
                 <Button
-                  href="/contact-a-therapist"
+                  href="/"
                   sx={{
-                    color: "white",
-                    backgroundColor: "#ff0000",
+                    color: "black",
+                    backgroundColor: "#eca44c",
                     "&:hover": {
-                      backgroundColor: "white",
-                      color: "#ff0000",
+                      backgroundColor: "black",
+                      color: "#fff",
                     },
                   }}
                   style={signin1}

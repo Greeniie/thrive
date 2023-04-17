@@ -14,14 +14,14 @@ const Sponsors = () => {
       <div className="min-h-[85vh] therapist">
         <div className="w-4/5 mx-auto pt-10">
           <div className="t-textbig">Meet Our Sponsors</div>
-          <div className="t-textsmall w-full md:w-1/2 text-white leading-snug">
+          <div className="t-textsmall w-full md:w-5/6 text-white leading-snug">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
             possimus accusamus sit? Pariatur corporis ad ipsa quo natus
             asperiores voluptate est atque debitis fugiat iste harum minus, illo
             officiis perspiciatis?
           </div>
           <div className="flex flex-col md:flex-row gap-2 pb-2 md:pb-0">
-            <button className="bg-[#ff0000] hover:bg-black text-white rounded-sm py-3 px-5" onClick={scroll}
+            <button className="bg-[#eca44c] hover:bg-black text-white rounded-sm py-3 px-5" onClick={scroll}
 >
               Become a Sponsor
             </button>

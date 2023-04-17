@@ -45,23 +45,23 @@ const Business = ({ business }) => {
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <IconButton href="#" target="_blank">
-            <InstagramIcon style={{ color: "#ff0000" }} />
+            <InstagramIcon style={{ color: "#eca44c" }} />
           </IconButton>
           <IconButton href="#" target="_blank">
-            <FacebookIcon style={{ color: "#ff0000" }} />
+            <FacebookIcon style={{ color: "#eca44c" }} />
           </IconButton>
           <IconButton href="#" target="_blank">
-            <LinkedInIcon style={{ color: "#ff0000" }} />
+            <LinkedInIcon style={{ color: "#eca44c" }} />
           </IconButton>
           <IconButton href="#" target="_blank">
-            <TwitterIcon style={{ color: "#ff0000" }} />
+            <TwitterIcon style={{ color: "#eca44c" }} />
           </IconButton>
         </div>
       </div>
 
       <div className="text-center">
         <button
-          className="bg-[#ff0000] text-white rounded-sm py-2 px-3"
+          className="button bg-[#eca44c] rounded-sm py-2 px-3"
           onClick={handleOpen}
         >
           View Business
@@ -97,16 +97,16 @@ const Business = ({ business }) => {
                 </div>
                 <div style={{ display: "flex" }}>
                   <IconButton href="#" target="_blank">
-                    <InstagramIcon style={{ color: "#ff0000" }} />
+                    <InstagramIcon style={{ color: "#eca44c" }} />
                   </IconButton>
                   <IconButton href="#" target="_blank">
-                    <FacebookIcon style={{ color: "#ff0000" }} />
+                    <FacebookIcon style={{ color: "#eca44c" }} />
                   </IconButton>
                   <IconButton href="#" target="_blank">
-                    <LinkedInIcon style={{ color: "#ff0000" }} />
+                    <LinkedInIcon style={{ color: "#eca44c" }} />
                   </IconButton>
                   <IconButton href="#" target="_blank">
-                    <TwitterIcon style={{ color: "#ff0000" }} />
+                    <TwitterIcon style={{ color: "#eca44c" }} />
                   </IconButton>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Business = ({ business }) => {
             {business.business_description}
           </Typography>
           <div className="text-center">
-            <button className="bg-[#ff0000] text-white rounded-sm py-2 px-3 m-3">
+            <button className="button bg-[#eca44c] rounded-sm py-2 px-3 m-3">
               Learn More
             </button>
           </div>
