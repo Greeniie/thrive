@@ -4,11 +4,6 @@ const Readmore = () => {
   return (
     <div style={{ bgColor: "#f9f9f9" }}>
       <div>
-        {/* <div>
-          <div className="images">
-            <img src={grouppic} alt="" className="missionimg" />
-          </div>
-        </div> */}
         <div className="bannerabout">
           <div>
             <p className="bannertext">

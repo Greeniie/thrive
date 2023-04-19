@@ -2,7 +2,7 @@ import React from "react";
 
 const CTA2 = () => {
   return (
-    <div className="min-h-[85vh] hero-bg2">
+    <div className="min-h-[90vh] hero-bg2">
       <div className="w-4/5 mx-auto pt-10">
         <div className="t-textbig">One-time sign-up.</div>
         <div className="t-textbig2"> Easy sign-ins.</div>
@@ -15,7 +15,7 @@ const CTA2 = () => {
           fraction of the actual cost. Thanks to support from our Co-Sponsors
           led by GIZ/GOPA.
         </div>
-        <div className="flex flex-col md:flex-row gap-2 pb-3 md:pb-0">
+        <div className="flex flex-col md:flex-row gap-2 pb-3 md:pb-5">
           <button className="button bg-[#eca44c] rounded-sm py-3 px-5">
             Become a Sponsor
           </button>

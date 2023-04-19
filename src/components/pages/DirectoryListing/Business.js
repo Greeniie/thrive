@@ -7,6 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import IconButton from "@mui/material/IconButton";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import { Link } from "react-router-dom";
 
 const style = {
   position: "absolute",
@@ -120,10 +121,13 @@ const Business = ({ business }) => {
           >
             {business.business_description}
           </Typography>
-          <div className="text-center">
-            <button className="button bg-[#eca44c] rounded-sm py-2 px-3 m-3">
+          <div className="text-center mb-3">
+            <Link
+              to={`/client/${business?.business_name}`}
+              className="button bg-[#eca44c] rounded-sm py-2 px-3 no-underline"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </Box>
       </Modal>

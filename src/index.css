@@ -274,14 +274,14 @@
   grid-template-columns: 50% 50%;
   gap: 30px;
   margin: 50px 0 50px auto;
-  font-family: DM Sans;
+  font-family: 'DM Sans' ƒ;
 }
 
 .button {
   color: black
 }
 
-.button:hover{
+.button:hover {
   color: white;
   background: #000;
 }
@@ -306,6 +306,28 @@
   color: #263238;
   padding-bottom: 10px;
   max-width: 500px;
+}
+
+.about-bannertext {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 80px;
+  line-height: 90px;
+  color: #263238;
+  padding-bottom: 10px;
+}
+
+
+.clientbannertext {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 80px;
+  line-height: 90px;
+  color: #263238;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .bannertextsmall {
@@ -338,6 +360,15 @@
 
 }
 
+.about {
+  background-image: url("./components/assets/20.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 50vw rgba(22, 21, 22, 0.6);
+
+}
+
 .t-textbig {
   padding-top: 100px;
   font-family: "DM Sans";
@@ -351,6 +382,17 @@
   margin-right: auto;
 }
 
+.about-t-textbig {
+  padding-top: 100px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 80px;
+  color: white;
+  padding-bottom: 10px;
+}
+
 .d-wrap {
   width: 80%;
   margin: auto;
@@ -361,6 +403,87 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 36px;
+}
+
+.onboard-wrap {
+  max-width: 1300px;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.login {
+  font-family: 'DM Sans';
+  width: 65%;
+  margin: auto;
+}
+
+.loginheader {
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #eca44c
+}
+
+.already {
+  padding-top: 16px;
+  text-align: center;
+}
+
+.onboard-wrap img {
+  object-fit: cover;
+}
+
+.errmsg {
+  background-color: lightpink;
+  border-radius: 5px;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  border: 1px solid firebrick;
+  text-align: center;
+}
+
+.namefields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.valid {
+  color: #2b7833;
+  margin-right: 5px;
+  margin-top: 0.25rem;
+}
+
+.invalid {
+  color: firebrick;
+  margin-top: 0.25rem;
+  margin-right: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+
+  color: firebrick;
+  padding: 0.25rem;
+  padding-left: 10px;
+}
+
+.instructions>svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
 }
 
 
@@ -376,11 +499,13 @@
     display: none;
   }
 
-  .bannertext {
+  .bannertext,
+  .about-bannertext {
     font-size: 45px;
   }
 
-  .t-textbig {
+  .t-textbig,
+  .about-t-textbig {
     font-size: 45px;
 
   }
@@ -388,11 +513,44 @@
 
 @media (max-width: 900px) {
 
+  .onboard-wrap {
+    width: 100%;
+    margin: auto;
+    display: inherit;
+  }
+
+  .namefields {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .already {
+    padding-top: 16px;
+    text-align: center;
+  }
+
+  .onboard-wrap img {
+    display: none;
+  }
+
+  .login {
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+  }
+
+  .loginheader {
+    text-align: center;
+    padding-top: 30px;
+    color: #eca44c
+  }
+
   .d-wrap {
     width: 90%;
     margin: auto;
     padding-top: 50px;
   }
+
   .formwrap {
     display: inline;
   }
@@ -428,7 +586,8 @@
   }
 
   .t-textbig1,
-  .t-textbig {
+  .t-textbig,
+  .about-t-textbig {
     padding-top: 50px;
     font-family: "Poppins";
     font-style: normal;
@@ -509,7 +668,8 @@
   }
 
 
-  .bannertext {
+  .bannertext,
+  .about-bannertext .clientbannertext {
     text-align: center;
     font-size: 45px;
     line-height: 60px;
@@ -522,7 +682,7 @@
     justify-content: center;
   }
 
-  .banner{
+  .banner {
     display: flex;
     flex-direction: column;
   }
@@ -533,10 +693,10 @@
   }
 
 
-.carousel-caption {
-  position: absolute;
-  top: 15%;
-}
+  .carousel-caption {
+    position: absolute;
+    top: 15%;
+  }
 
 
 }

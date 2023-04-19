@@ -11,8 +11,9 @@ import MenuItem from "@mui/material/MenuItem";
 import logo from "../../components/assets/LOGOMARK.png";
 import HamburgerOpenIcon from "../MenuIcons/HamburgerOpenIcon";
 import HamburgerCloseIcon from "../MenuIcons/HamburgerCloseIcon";
+import { HashLink } from "react-router-hash-link";
 
-const Navbar = () => {
+const ClientNav = () => {
   const lgstyle = {
     height: "43px",
   };
@@ -22,7 +23,7 @@ const Navbar = () => {
     marginLeft: "12px",
   };
 
-  const signin = {
+  const signin1 = {
     textTransform: "capitalize",
     fontFamily: "DM Sans",
     fontWeight: "bold",
@@ -58,12 +59,13 @@ const Navbar = () => {
     <div className="landingnav">
       <div className="mynav">
         <AppBar
+          position="static"
           sx={{
-            position: "absolute",
-            background: "transparent",
+            bgcolor: "#FEFFFF",
+            color: "#6B7280",
             fontSize: "14px",
             lineHeight: "20px",
-            padding: "10px",
+            padding: "10px 20px",
           }}
           elevation={0}
           className="nav"
@@ -77,7 +79,13 @@ const Navbar = () => {
                 display: { xs: "none", md: "flex" },
               }}
             >
-              <Link to="/" className="logo">
+              <Link
+                to="/"
+                className="logo"
+                style={{
+                  margin: "0 9px",
+                }}
+              >
                 <img src={logo} alt="" style={lgstylemobile} />
               </Link>
             </Typography>
@@ -130,13 +138,13 @@ const Navbar = () => {
                     }}
                   >
                     <NavLink
-                      to="/about"
-                      className="landingnavlink"
+                      to="/"
+                      className="landingnavlink1"
                       style={({ isActive }) =>
                         isActive ? activeStyle : undefined
                       }
                     >
-                      About Us
+                      Home
                     </NavLink>
                   </Typography>
                   <Typography
@@ -144,87 +152,27 @@ const Navbar = () => {
                       my: 2,
                     }}
                   >
-                    <NavLink
-                      to="/sponsors"
-                      className="landingnavlink"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }
-                    >
-                      Our Sponsors
-                    </NavLink>
+                    <HashLink smooth to="#about" className="landingnavlink1">
+                      About
+                    </HashLink>
                   </Typography>
                   <Typography
                     sx={{
                       my: 2,
                     }}
                   >
-                    <NavLink
-                      to="/directory-listing"
-                      className="landingnavlink"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }
-                    >
-                      Directory Listing
-                    </NavLink>
+                    <HashLink smooth to="#services" className="landingnavlink1">
+                      Services
+                    </HashLink>
                   </Typography>
                   <Typography
                     sx={{
                       my: 2,
                     }}
                   >
-                    <NavLink
-                      to="/marketplace"
-                      className="landingnavlink"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }
-                    >
-                      Marketplace
-                    </NavLink>
-                  </Typography>
-                  <Typography
-                    sx={{
-                      my: 2,
-                    }}
-                  >
-                    <NavLink
-                      to="/contact"
-                      className="landingnavlink"
-                      style={({ isActive }) =>
-                        isActive ? activeStyle : undefined
-                      }
-                    >
-                      Contact{" "}
-                    </NavLink>
-                  </Typography>
-
-                  <Typography
-                    sx={{
-                      mt: 2,
-                    }}
-                  >
-                    <Link to="/login" className="signin">
-                      Sign In
-                    </Link>
-                  </Typography>
-
-                  <Typography>
-                    <Button
-                      href="/signup"
-                      sx={{
-                        color: "black",
-                        backgroundColor: "#eca44c",
-                        "&:hover": {
-                          backgroundColor: "black",
-                          color: "#fff",
-                        },
-                      }}
-                      style={signupmobile}
-                    >
-                      Sign up
-                    </Button>
+                    <HashLink smooth to="#contact" className="landingnavlink1">
+                      Contact
+                    </HashLink>
                   </Typography>
                 </MenuItem>
               </Menu>
@@ -248,78 +196,26 @@ const Navbar = () => {
               <Typography>
                 <NavLink
                   to="/about"
-                  className="landingnavlink"
+                  className="landingnavlink1"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                  About Us
+                  Home
                 </NavLink>
               </Typography>
               <Typography>
-                <NavLink
-                  to="/sponsors"
-                  className="landingnavlink"
-                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                >
-                  Our Sponsors
-                </NavLink>
+                <HashLink smooth to="#about" className="landingnavlink1">
+                  About
+                </HashLink>
               </Typography>
               <Typography>
-                <NavLink
-                  to="/directory-listing"
-                  className="landingnavlink"
-                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                >
-                  Directory Listing
-                </NavLink>
+                <HashLink smooth to="#services" className="landingnavlink1">
+                  Services
+                </HashLink>
               </Typography>
               <Typography>
-                <NavLink
-                  to="/marketplace"
-                  className="landingnavlink"
-                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                >
-                  Marketplace
-                </NavLink>
-              </Typography>
-              <Typography>
-                <NavLink
-                  to="/contact"
-                  className="landingnavlink"
-                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                >
+                <HashLink smooth to="#contact" className="landingnavlink1">
                   Contact
-                </NavLink>
-              </Typography>
-            </Box>
-            <Box
-              sx={{
-                flexGrow: 1,
-                display: { xs: "none", md: "flex", justifyContent: "flex-end" },
-              }}
-            >
-              <div>
-                <Typography>
-                  <Link to="/login" className="signin">
-                    Sign In
-                  </Link>
-                </Typography>
-              </div>
-
-              <Typography>
-                <Button
-                  href="/signup"
-                  sx={{
-                    color: "black",
-                    backgroundColor: "#eca44c",
-                    "&:hover": {
-                      backgroundColor: "black",
-                      color: "#fff",
-                    },
-                  }}
-                  style={signin}
-                >
-                  Sign up
-                </Button>
+                </HashLink>
               </Typography>
             </Box>
           </Toolbar>
@@ -329,4 +225,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default ClientNav;

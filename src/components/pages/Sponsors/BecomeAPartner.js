@@ -3,7 +3,7 @@ import image from "../../assets/26.jpg";
 
 const BecomeAPartner = () => {
   return (
-    <div className="pt-10 mx-3 md:mx-0">
+    <div className="pt-10 mx-3 md:mx-0" id="become">
       <h2 className="text-[50px] mb-5 text-[#eca44c] text-center">
         Become a Sponsor
       </h2>

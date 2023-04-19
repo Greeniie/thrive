@@ -3,11 +3,9 @@ import Footer from "../../Landing/Footer";
 import NavBar2 from "../../Landing/Navbar2";
 import SponsorsList from "../../Landing/Sponsors";
 import BecomeAPartner from "./BecomeAPartner";
+import { HashLink } from "react-router-hash-link";
 const Sponsors = () => {
-
-  const scroll = () => {
-    window.screen.height > '500px' ? window.scrollBy(0, 700) :  window.scrollBy(0, 2100);
-  };
+ 
   return (
     <div>
       <NavBar2 />
@@ -15,16 +13,18 @@ const Sponsors = () => {
         <div className="w-4/5 mx-auto pt-10">
           <div className="t-textbig">Meet Our Sponsors</div>
           <div className="t-textsmall w-full md:w-5/6 text-white leading-snug">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
-            possimus accusamus sit? Pariatur corporis ad ipsa quo natus
-            asperiores voluptate est atque debitis fugiat iste harum minus, illo
-            officiis perspiciatis?
+            We offer various sponsorship levels and benefits, including access
+            to a new and bigger target market, logo placement, event
+            participation, etc. Your sponsorship will help us provide MSMEs with
+            the tools and resources they need to succeed, including access to
+            finance, business development services, and market opportunities.
           </div>
           <div className="flex flex-col md:flex-row gap-2 pb-2 md:pb-0">
-            <button className="bg-[#eca44c] hover:bg-black text-white rounded-sm py-3 px-5" onClick={scroll}
->
+            <HashLink smooth to="#become"
+              className="bg-[#eca44c] hover:bg-black text-white rounded-sm py-3 px-5 no-underline"
+            >
               Become a Sponsor
-            </button>
+            </HashLink>
           </div>
         </div>
       </div>
