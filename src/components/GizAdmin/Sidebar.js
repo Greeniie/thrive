@@ -41,7 +41,7 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           className="dashboard-link"
-          to="/adminlogin"
+          to="/giz-login"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           <div>
