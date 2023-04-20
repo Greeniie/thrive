@@ -256,7 +256,8 @@ const Signup = () => {
                   </div>
 
                   <div>
-                    <TextField                  style={{
+                    <TextField
+                      style={{
                         width: "100%",
                         boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.05)",
                         borderRadius: "6px",
@@ -302,13 +303,19 @@ const Signup = () => {
                   </div>
                 </div>
 
-                <div style={{
-                        marginTop: '15px'
-                      }}>
+                <div
+                  style={{
+                    marginTop: "15px",
+                  }}
+                >
                   <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <DatePicker sx={{  width: "100%",
+                    <DatePicker
+                      sx={{
+                        width: "100%",
                         boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.05)",
-                        borderRadius: "6px",}}/>
+                        borderRadius: "6px",
+                      }}
+                    />
                   </LocalizationProvider>
                 </div>
                 <div>
@@ -388,7 +395,9 @@ const Signup = () => {
                       }}
                       variant="contained"
                       disabled={
-                        !validFirstName || !validLastName ? true : false
+                        !validFirstName || !validLastName || !email
+                          ? true
+                          : false
                       }
                     >
                       Create Account

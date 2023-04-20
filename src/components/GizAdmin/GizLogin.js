@@ -1,5 +1,5 @@
 import React from "react";
-import onboardimg from "../../components/assets/7.jpg";
+import logo from "../../components/assets/LOGO_BLACK.png";
 import Button from "@mui/material/Button";
 import LoadingButton from "@mui/lab/LoadingButton";
 // import GoogleIcon from "@mui/icons-material/Google";
@@ -12,15 +12,11 @@ import InputAdornment from "@mui/material/InputAdornment";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
-import Checkbox from "@mui/material/Checkbox";
-import FormControlLabel from "@mui/material/FormControlLabel";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import Divider from "@mui/material/Divider";
 import { useState, useEffect, useRef } from "react";
 // import useAuth from "./hooks/useAuth";
 import axios from "axios";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const theme = createTheme({
   palette: {
@@ -32,12 +28,12 @@ const theme = createTheme({
 
 const loginUrl = "v1/login";
 
-const Login = () => {
+const GizLogin = () => {
   const [loading, setLoading] = useState(false);
 
-//   const { setAuth } = useAuth();
+  //   const { setAuth } = useAuth();
 
-//   const { setLoggedIn } = useAuth();
+  //   const { setLoggedIn } = useAuth();
 
   let navigate = useNavigate();
   let location = useLocation();
@@ -88,66 +84,54 @@ const Login = () => {
     // setLoggedIn(false);
     setLoading(true);
 
-    try {
-      const res = await axios.post(
-        loginUrl,
-        JSON.stringify({
-          usernameOrEmail: user.toLowerCase() || email,
-          password: pwd.password,
-        }),
-        {
-          headers: { "Content-Type": "application/json " },
-        }
-      );
+    navigate('/admin-dashboard')
 
-      console.log(res?.data);
+    // try {
+    //   const res = await axios.post(
+    //     loginUrl,
+    //     JSON.stringify({
+    //       usernameOrEmail: user.toLowerCase() || email,
+    //       password: pwd.password,
+    //     }),
+    //     {
+    //       headers: { "Content-Type": "application/json " },
+    //     }
+    //   );
 
-      const currentUser = res?.data?.user;
+    //   console.log(res?.data);
 
-      const accessToken = res?.data?.accessToken;
-      const roles = res?.data?.roles;
+    //   const currentUser = res?.data?.user;
 
-      tempPass = pwd.password;
-      tempUser = user || email;
+    //   const accessToken = res?.data?.accessToken;
+    //   const roles = res?.data?.roles;
 
-    //   setAuth({ usernameOrEmail: tempUser, pwd: tempPass, roles, accessToken });
-      localStorage.setItem("accessToken", accessToken);
-      localStorage.setItem("currentUser", JSON.stringify(currentUser));
-      setUser("");
-      setPwd("");
-      setLoading(false);
-    //   setLoggedIn(true);
-      navigate(from, { replace: true });
-    } catch (err) {
-      if (!err?.response) {
-        setErrMsg("No Server Response");
-        setLoading(false);
-      } else if (err.response?.status === 400) {
-        setErrMsg("Username or Password incorrect");
-        setLoading(false);
-      } else if (err.response?.status === 403) {
-        setErrMsg("Unauthorized");
-        setLoading(false);
-      } else {
-        setErrMsg("Login Failed");
-        setLoading(false);
-      }
-      errRef.current.focus();
-    }
-  };
+    //   tempPass = pwd.password;
+    //   tempUser = user || email;
 
-  const customStyle = {
-    fontFamily: "DM sans",
-    padding: "8px 22px",
-    color: "white",
-    background: "#eca44c",
-    fontStyle: "normal",
-    fontWeight: "700",
-    fontSize: "14px",
-    textTransform: "capitalize",
-    textAlign: "justify",
-    letterSpacing: "0.02em",
-    width: "100%",
+    //    setAuth({ usernameOrEmail: tempUser, pwd: tempPass, roles, accessToken });
+    //   localStorage.setItem("accessToken", accessToken);
+    //   localStorage.setItem("currentUser", JSON.stringify(currentUser));
+    //   setUser("");
+    //   setPwd("");
+    //   setLoading(false);
+    //    setLoggedIn(true);
+    //   navigate(from, { replace: true });
+    // } catch (err) {
+    //   if (!err?.response) {
+    //     setErrMsg("No Server Response");
+    //     setLoading(false);
+    //   } else if (err.response?.status === 400) {
+    //     setErrMsg("Username or Password incorrect");
+    //     setLoading(false);
+    //   } else if (err.response?.status === 403) {
+    //     setErrMsg("Unauthorized");
+    //     setLoading(false);
+    //   } else {
+    //     setErrMsg("Login Failed");
+    //     setLoading(false);
+    //   }
+    //   errRef.current.focus();
+    // }
   };
 
   const handleUser = (e) => {
@@ -155,34 +139,17 @@ const Login = () => {
     setEmail(e.target.value);
   };
 
-  const goBack = () => {
-    navigate(-1);
-  };
-
   return (
-    <div>
-      <div className="onboard-wrap">
-        <div>
-          <img
-            style={{ height: "780px", width: "auto" }}
-            src={onboardimg}
-            alt="onboarding"
-          />
-        </div>
+    <div style={{ background: "#e5e5e5" }}>
+      <div className="giz-onboard-wrap w-[90%] md:w-[60%]">
         <div className="login">
-          <div className="loginheader" style={{ display: "flex", gap: "15px" }}>
-            <div>
-              <IconButton
-                onClick={goBack}
-                style={{ color: "#eca44c", marginRight: "16px" }}
-                aria-label="GoBack"
-              >
-                <ArrowBackIcon />
-              </IconButton>
-            </div>
-            <div>Sign in</div>
+          <div className="flex justify-center">
+            <img src={logo} alt="" className="dashboard-logo" />
           </div>
-          
+          <div className="loginheader pb-3">
+            <div>Giz Admin Sign in</div>
+          </div>
+
           <p
             ref={errRef}
             className={errMsg ? "errmsg" : "offscreen"}
@@ -192,7 +159,7 @@ const Login = () => {
           </p>
           <form onSubmit={handleSubmit}>
             <div>
-              <Box>
+              <Box style={{ fontFamily: "DM Sans" }}>
                 <TextField
                   style={{
                     width: "100%",
@@ -201,7 +168,7 @@ const Login = () => {
                     borderRadius: "6px",
                   }}
                   id="username "
-                  label="Email"
+                  label="Username or Email"
                   variant="outlined"
                   value={email}
                   onChange={handleUser}
@@ -210,7 +177,6 @@ const Login = () => {
                 <FormControl variant="outlined" style={{ width: "100%" }}>
                   <InputLabel
                     htmlFor="outlined-adornment-password"
-                    color="success"
                   >
                     Password
                   </InputLabel>
@@ -322,4 +288,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default GizLogin;
