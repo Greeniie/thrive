@@ -140,13 +140,13 @@ const GizLogin = () => {
   };
 
   return (
-    <div style={{ background: "#e5e5e5" }}>
+    <div style={{ background: "#000" }}>
       <div className="giz-onboard-wrap w-[90%] md:w-[60%]">
         <div className="login">
           <div className="flex justify-center">
             <img src={logo} alt="" className="dashboard-logo" />
           </div>
-          <div className="loginheader pb-3">
+          <div className="loginheader pb-3 text-center">
             <div>Giz Admin Sign in</div>
           </div>
 
